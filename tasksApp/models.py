@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Check(models.Model):
+    text = models.CharField(max_length=200)
+    value = models.CharField(max_length=200)
